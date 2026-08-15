@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1060" width="800" height="1060" role="img">
+  <title>Araf Systems — Complete Logo Brand Sheet</title>
+  <desc>All logo variants: primary, reversed, stacked, icon mark, favicon sizes, and brand color swatches</desc>
+
+  <defs>
+    <!-- Shared mountain clipPaths at various sizes -->
+    <clipPath id="bs-c80"><rect width="80" height="80" rx="14"/></clipPath>
+    <clipPath id="bs-c60"><rect width="60" height="60" rx="11"/></clipPath>
+    <clipPath id="bs-c48"><rect width="48" height="48" rx="9"/></clipPath>
+    <clipPath id="bs-c32"><rect width="32" height="32" rx="6"/></clipPath>
+    <clipPath id="bs-c24"><rect width="24" height="24" rx="4"/></clipPath>
+    <clipPath id="bs-c16"><rect width="16" height="16" rx="3"/></clipPath>
+  </defs>
+
+  <style>
+    .sheet-bg-light { fill: #F7FAFC; }
+    .sheet-bg-dark  { fill: #0F1E2E; }
+    .sheet-divider  { stroke: #DDE6EF; stroke-width: 0.75; fill: none; }
+    .sheet-label    { font-family: Arial, sans-serif; font-size: 11px; fill: #8BA5BA; letter-spacing: 0.5px; }
+    .sheet-heading  { font-family: Arial, sans-serif; font-size: 10px; font-weight: 700; fill: #4A7A9B; letter-spacing: 1.5px; text-transform: uppercase; }
+    .wm { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; }
+    .sub { font-family: Arial, sans-serif; font-size: 9px; letter-spacing: 4px; }
+  </style>
+
+  <!-- ── Page bg ── -->
+  <rect width="800" height="1060" fill="#EEF3F8"/>
+
+  <!-- ══ SECTION 1: Primary Horizontal (light bg) ══ -->
+  <rect x="30" y="30" width="740" height="170" rx="12" fill="#F7FAFC"/>
+  <text x="50" y="58" class="sheet-heading">01 — Primary lockup · light background</text>
+  <line x1="50" y1="65" x2="750" y2="65" class="sheet-divider"/>
+
+  <g transform="translate(80, 82)">
+    <rect width="80" height="80" rx="14" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c80)">
+      <polygon points="6,80 40,30 74,80"  fill="#008C81"/>
+      <polygon points="-2,80 24,40 50,80" fill="#009E91"/>
+      <polygon points="18,80 40,16 62,80" fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="32,80 56,36 80,80" fill="#009E91"/>
+      <rect x="0" y="70" width="80" height="10" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="178" y="130" class="wm" font-size="36" letter-spacing="3" fill="#0F1E2E">ARAF</text>
+  <text x="178" y="165" class="wm" font-size="36" letter-spacing="3" fill="#00B4A6">SYSTEMS</text>
+  <text x="180" y="183" class="sub" fill="#8BA5BA">TECHNOLOGY CONSULTING</text>
+
+  <!-- ══ SECTION 2: Reversed (dark bg) ══ -->
+  <rect x="30" y="218" width="740" height="170" rx="12" fill="#0F1E2E"/>
+  <text x="50" y="246" class="sheet-heading" style="fill:#4A7A9B;">02 — Reversed lockup · dark background</text>
+  <line x1="50" y1="253" x2="750" y2="253" style="stroke:#1A2E42;stroke-width:0.75;fill:none;"/>
+
+  <g transform="translate(80, 270)">
+    <rect width="80" height="80" rx="14" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c80)">
+      <polygon points="6,80 40,30 74,80"  fill="#008C81"/>
+      <polygon points="-2,80 24,40 50,80" fill="#009E91"/>
+      <polygon points="18,80 40,16 62,80" fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="32,80 56,36 80,80" fill="#009E91"/>
+      <rect x="0" y="70" width="80" height="10" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="178" y="318" class="wm" font-size="36" letter-spacing="3" fill="#FFFFFF">ARAF</text>
+  <text x="178" y="353" class="wm" font-size="36" letter-spacing="3" fill="#00B4A6">SYSTEMS</text>
+  <text x="180" y="371" class="sub" fill="rgba(255,255,255,0.3)">TECHNOLOGY CONSULTING</text>
+
+  <!-- ══ SECTION 3: Stacked variants ══ -->
+  <rect x="30" y="406" width="355" height="210" rx="12" fill="#F7FAFC"/>
+  <text x="50" y="432" class="sheet-heading">03 — Stacked · light</text>
+  <line x1="50" y1="439" x2="365" y2="439" class="sheet-divider"/>
+  <g transform="translate(148, 452)">
+    <rect width="80" height="80" rx="14" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c80)">
+      <polygon points="6,80 40,30 74,80"  fill="#008C81"/>
+      <polygon points="-2,80 24,40 50,80" fill="#009E91"/>
+      <polygon points="18,80 40,16 62,80" fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="32,80 56,36 80,80" fill="#009E91"/>
+      <rect x="0" y="70" width="80" height="10" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="188" y="552" text-anchor="middle" class="wm" font-size="28" letter-spacing="3" fill="#0F1E2E">ARAF</text>
+  <text x="188" y="582" text-anchor="middle" class="wm" font-size="28" letter-spacing="3" fill="#00B4A6">SYSTEMS</text>
+  <text x="188" y="599" text-anchor="middle" class="sub" fill="#8BA5BA">TECHNOLOGY CONSULTING</text>
+
+  <rect x="415" y="406" width="355" height="210" rx="12" fill="#0F1E2E"/>
+  <text x="435" y="432" class="sheet-heading" style="fill:#4A7A9B;">04 — Stacked · dark</text>
+  <line x1="435" y1="439" x2="750" y2="439" style="stroke:#1A2E42;stroke-width:0.75;fill:none;"/>
+  <g transform="translate(533, 452)">
+    <rect width="80" height="80" rx="14" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c80)">
+      <polygon points="6,80 40,30 74,80"  fill="#008C81"/>
+      <polygon points="-2,80 24,40 50,80" fill="#009E91"/>
+      <polygon points="18,80 40,16 62,80" fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="32,80 56,36 80,80" fill="#009E91"/>
+      <rect x="0" y="70" width="80" height="10" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="573" y="552" text-anchor="middle" class="wm" font-size="28" letter-spacing="3" fill="#FFFFFF">ARAF</text>
+  <text x="573" y="582" text-anchor="middle" class="wm" font-size="28" letter-spacing="3" fill="#00B4A6">SYSTEMS</text>
+  <text x="573" y="599" text-anchor="middle" class="sub" fill="rgba(255,255,255,0.3)">TECHNOLOGY CONSULTING</text>
+
+  <!-- ══ SECTION 4: Icon mark at all sizes ══ -->
+  <rect x="30" y="634" width="740" height="200" rx="12" fill="#F7FAFC"/>
+  <text x="50" y="660" class="sheet-heading">05 — Icon mark at all sizes (teal &amp; navy variants)</text>
+  <line x1="50" y1="667" x2="750" y2="667" class="sheet-divider"/>
+
+  <!-- 80px teal -->
+  <g transform="translate(58, 682)">
+    <rect width="80" height="80" rx="14" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c80)">
+      <polygon points="6,80 40,30 74,80"  fill="#008C81"/>
+      <polygon points="-2,80 24,40 50,80" fill="#009E91"/>
+      <polygon points="18,80 40,16 62,80" fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="32,80 56,36 80,80" fill="#009E91"/>
+      <rect x="0" y="70" width="80" height="10" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="98" y="778" text-anchor="middle" class="sheet-label">80px</text>
+
+  <!-- 60px teal -->
+  <g transform="translate(160, 692)">
+    <rect width="60" height="60" rx="11" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c60)">
+      <polygon points="4,60 30,22 56,60"  fill="#008C81"/>
+      <polygon points="-1,60 18,30 37,60" fill="#009E91"/>
+      <polygon points="13,60 30,12 47,60" fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="24,60 42,27 60,60" fill="#009E91"/>
+      <rect x="0" y="52" width="60" height="8" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="190" y="778" text-anchor="middle" class="sheet-label">60px</text>
+
+  <!-- 48px teal -->
+  <g transform="translate(244, 698)">
+    <rect width="48" height="48" rx="9" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c48)">
+      <polygon points="3,48 24,18 45,48"  fill="#008C81"/>
+      <polygon points="-1,48 14,24 29,48" fill="#009E91"/>
+      <polygon points="10,48 24,9 38,48"  fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="19,48 33,21 48,48" fill="#009E91"/>
+      <rect x="0" y="42" width="48" height="6" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="268" y="778" text-anchor="middle" class="sheet-label">48px</text>
+
+  <!-- 32px teal (favicon) -->
+  <g transform="translate(314, 706)">
+    <rect width="32" height="32" rx="6" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c32)">
+      <polygon points="2,32 16,11 30,32"  fill="#008C81"/>
+      <polygon points="-1,32 9,16 20,32" fill="#009E91"/>
+      <polygon points="7,32 16,5 25,32"  fill="#FFFFFF" opacity="0.95"/>
+      <polygon points="13,32 22,14 32,32" fill="#009E91"/>
+      <rect x="0" y="28" width="32" height="4" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="330" y="778" text-anchor="middle" class="sheet-label">32px</text>
+
+  <!-- 24px teal -->
+  <g transform="translate(358, 710)">
+    <rect width="24" height="24" rx="4" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c24)">
+      <polygon points="2,24 12,8 22,24"  fill="#008C81"/>
+      <polygon points="0,24 7,12 14,24" fill="#009E91"/>
+      <polygon points="5,24 12,3 19,24"  fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="10,24 17,10 24,24" fill="#009E91"/>
+      <rect x="0" y="21" width="24" height="3" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="370" y="778" text-anchor="middle" class="sheet-label">24px</text>
+
+  <!-- 16px teal -->
+  <g transform="translate(394, 714)">
+    <rect width="16" height="16" rx="3" fill="#00B4A6"/>
+    <g clip-path="url(#bs-c16)">
+      <polygon points="1,16 8,5 15,16"  fill="#008C81"/>
+      <polygon points="0,16 4,8 9,16"  fill="#009E91"/>
+      <polygon points="3,16 8,2 13,16"  fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="7,16 11,6 16,16" fill="#009E91"/>
+      <rect x="0" y="14" width="16" height="2" fill="#007A70"/>
+    </g>
+  </g>
+  <text x="402" y="778" text-anchor="middle" class="sheet-label">16px</text>
+
+  <!-- Navy variants (same sizes) -->
+  <!-- 80px navy -->
+  <g transform="translate(432, 682)">
+    <rect width="80" height="80" rx="14" fill="#0F1E2E"/>
+    <g clip-path="url(#bs-c80)">
+      <polygon points="6,80 40,30 74,80"  fill="#1A2E42"/>
+      <polygon points="-2,80 24,40 50,80" fill="#163247"/>
+      <polygon points="18,80 40,16 62,80" fill="#00B4A6"/>
+      <polygon points="32,80 56,36 80,80" fill="#163247"/>
+      <rect x="0" y="70" width="80" height="10" fill="#0A1829"/>
+    </g>
+  </g>
+  <text x="472" y="778" text-anchor="middle" class="sheet-label">80px</text>
+
+  <!-- 48px navy -->
+  <g transform="translate(530, 698)">
+    <rect width="48" height="48" rx="9" fill="#0F1E2E"/>
+    <g clip-path="url(#bs-c48)">
+      <polygon points="3,48 24,18 45,48"  fill="#1A2E42"/>
+      <polygon points="-1,48 14,24 29,48" fill="#163247"/>
+      <polygon points="10,48 24,9 38,48"  fill="#00B4A6"/>
+      <polygon points="19,48 33,21 48,48" fill="#163247"/>
+      <rect x="0" y="42" width="48" height="6" fill="#0A1829"/>
+    </g>
+  </g>
+  <text x="554" y="778" text-anchor="middle" class="sheet-label">48px</text>
+
+  <!-- 32px navy -->
+  <g transform="translate(598, 706)">
+    <rect width="32" height="32" rx="6" fill="#0F1E2E"/>
+    <g clip-path="url(#bs-c32)">
+      <polygon points="2,32 16,11 30,32"  fill="#1A2E42"/>
+      <polygon points="-1,32 9,16 20,32" fill="#163247"/>
+      <polygon points="7,32 16,5 25,32"  fill="#00B4A6"/>
+      <polygon points="13,32 22,14 32,32" fill="#163247"/>
+      <rect x="0" y="28" width="32" height="4" fill="#0A1829"/>
+    </g>
+  </g>
+  <text x="614" y="778" text-anchor="middle" class="sheet-label">32px</text>
+
+  <text x="390" y="795" text-anchor="middle" class="sheet-label">← Teal badge variants ·  Navy badge variants →</text>
+
+  <!-- ══ SECTION 5: Brand Colors ══ -->
+  <rect x="30" y="850" width="740" height="180" rx="12" fill="#F7FAFC"/>
+  <text x="50" y="876" class="sheet-heading">06 — Brand color palette</text>
+  <line x1="50" y1="883" x2="750" y2="883" class="sheet-divider"/>
+
+  <!-- Swatch 1: Navy -->
+  <rect x="55"  y="900" width="100" height="60" rx="8" fill="#0F1E2E"/>
+  <text x="105" y="978" text-anchor="middle" class="sheet-label">#0F1E2E</text>
+  <text x="105" y="992" text-anchor="middle" class="sheet-label">Navy</text>
+
+  <!-- Swatch 2: Slate -->
+  <rect x="168" y="900" width="100" height="60" rx="8" fill="#1A2E42"/>
+  <text x="218" y="978" text-anchor="middle" class="sheet-label">#1A2E42</text>
+  <text x="218" y="992" text-anchor="middle" class="sheet-label">Slate</text>
+
+  <!-- Swatch 3: Teal primary -->
+  <rect x="281" y="900" width="100" height="60" rx="8" fill="#00B4A6"/>
+  <text x="331" y="978" text-anchor="middle" class="sheet-label">#00B4A6</text>
+  <text x="331" y="992" text-anchor="middle" class="sheet-label">Teal Primary</text>
+
+  <!-- Swatch 4: Teal dark -->
+  <rect x="394" y="900" width="100" height="60" rx="8" fill="#008C81"/>
+  <text x="444" y="978" text-anchor="middle" class="sheet-label">#008C81</text>
+  <text x="444" y="992" text-anchor="middle" class="sheet-label">Teal Dark</text>
+
+  <!-- Swatch 5: Amber -->
+  <rect x="507" y="900" width="100" height="60" rx="8" fill="#F59E0B"/>
+  <text x="557" y="978" text-anchor="middle" class="sheet-label">#F59E0B</text>
+  <text x="557" y="992" text-anchor="middle" class="sheet-label">Amber Accent</text>
+
+  <!-- Swatch 6: Off white -->
+  <rect x="620" y="900" width="100" height="60" rx="8" fill="#F0F4F8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="670" y="978" text-anchor="middle" class="sheet-label">#F0F4F8</text>
+  <text x="670" y="992" text-anchor="middle" class="sheet-label">Off White</text>
+
+  <!-- Footer note -->
+  <text x="400" y="1045" text-anchor="middle" class="sheet-label">Araf Systems LLC  ·  arafsystems.com  ·  Irving, TX</text>
+
+</svg>

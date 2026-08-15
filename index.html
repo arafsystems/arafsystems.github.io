@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Araf Systems – Technology Consulting</title>
-  <meta name="description" content="Dallas–Fort Worth-based software consulting firm specializing in cloud solutions, AI, data analytics, custom software development, and IT consulting." />
+  <meta name="description" content="US-based software consulting firm specializing in cloud solutions, AI, data analytics, custom software development, and IT consulting." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -137,27 +138,29 @@
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       flex-shrink: 0;
     }
-    .nav-logo-icon {
-      width: 38px; height: 38px;
-      background: var(--teal);
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
+    .nav-logo-svg { display: block; flex-shrink: 0; }
+    .nav-logo-wordmark {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+    .nav-logo-wordmark .w1 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: var(--white);
+      letter-spacing: .12em;
     }
-    .nav-logo-text {
+    .nav-logo-wordmark .w2 {
       font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: var(--white);
-      letter-spacing: -.02em;
+      font-weight: 900;
+      font-size: 1rem;
+      color: var(--teal);
+      letter-spacing: .12em;
     }
-    .nav-logo-text span { color: var(--teal); }
     .nav-links {
       display: flex;
       align-items: center;
@@ -975,6 +978,34 @@
     }
     .footer-bottom p { font-size: .82rem; color: rgba(255,255,255,.35); }
 
+    /* ─── Consulting Domains Grid ─── */
+    .domains-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .domain-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+    .domain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: rgba(0,180,166,.3); }
+    .domain-icon {
+      width: 52px; height: 52px; flex-shrink: 0;
+      background: rgba(0,180,166,.1);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      color: var(--teal);
+    }
+    .domain-body h3 { font-size: 1rem; color: var(--navy); margin-bottom: 8px; }
+    .domain-body p  { font-size: .88rem; margin-bottom: 12px; }
+
     /* ── Alt section bg ── */
     .bg-alt { background: var(--section-alt); }
     .bg-navy { background: var(--navy); }
@@ -983,6 +1014,7 @@
        RESPONSIVE
     ══════════════════════════════════════════ */
     @media (max-width: 1024px) {
+      .domains-grid { grid-template-columns: repeat(2, 1fr); }
       .home-services-grid { grid-template-columns: repeat(2, 1fr); }
       .why-grid { grid-template-columns: 1fr; gap: 48px; }
       .why-img-wrap { max-width: 600px; }
@@ -1002,6 +1034,7 @@
       section { padding: 64px 0; }
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
+      .domains-grid { grid-template-columns: 1fr; }
       .home-services-grid { grid-template-columns: 1fr; }
       .hero-stats { gap: 28px; }
       .ai-capabilities { grid-template-columns: 1fr; }
@@ -1045,8 +1078,21 @@
 <nav id="navbar" class="transparent">
   <div class="container nav-inner">
     <a class="nav-logo" href="#" onclick="showPage('home')">
-      <div class="nav-logo-icon">A</div>
-      <span class="nav-logo-text">Araf<span>Systems</span></span>
+      <svg class="nav-logo-svg" width="38" height="38" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><clipPath id="nc"><rect width="80" height="80" rx="14"/></clipPath></defs>
+        <rect width="80" height="80" rx="14" fill="#00B4A6"/>
+        <g clip-path="url(#nc)">
+          <polygon points="6,80 40,30 74,80"  fill="#008C81"/>
+          <polygon points="-2,80 24,40 50,80" fill="#009E91"/>
+          <polygon points="18,80 40,16 62,80" fill="#FFFFFF" opacity="0.95"/>
+          <polygon points="32,80 56,36 80,80" fill="#009E91"/>
+          <rect x="0" y="70" width="80" height="10" fill="#007A70"/>
+        </g>
+      </svg>
+      <div class="nav-logo-wordmark">
+        <span class="w1">ARAF</span>
+        <span class="w2">SYSTEMS</span>
+      </div>
     </a>
     <div class="nav-links">
       <a href="#" onclick="showPage('home')" class="active" data-page="home">Home</a>
@@ -1086,7 +1132,7 @@
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-eyebrow">Dallas–Fort Worth &nbsp;·&nbsp; Nationwide Consulting</div>
+        <div class="hero-eyebrow">Trusted Technology Consulting &nbsp;·&nbsp; Serving Businesses Nationwide</div>
         <h1>Technology That <span class="accent">Scales</span> With Your Business</h1>
         <p class="hero-sub">We design, build, and optimize reliable technology solutions for companies across the United States — from cloud migrations to AI-powered products.</p>
         <div class="hero-btns">
@@ -1103,12 +1149,12 @@
             <div class="stat-label">Enterprise Clients</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">10+</div>
+            <div class="stat-num" id="yearsExp">3+</div>
             <div class="stat-label">Years of Experience</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">48</div>
-            <div class="stat-label">States Served</div>
+            <div class="stat-num">US</div>
+            <div class="stat-label">Nationwide Coverage</div>
           </div>
         </div>
       </div>
@@ -1142,14 +1188,14 @@
         <div class="why-img-wrap fade-up">
           <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&q=80&auto=format&fit=crop" alt="Technology consulting team" loading="lazy" />
           <div class="why-badge">
-            <div class="big">DFW</div>
-            <div class="sm">Based &amp; Nationwide</div>
+            <div class="big">USA</div>
+            <div class="sm">Nationwide Service</div>
           </div>
         </div>
         <div class="fade-up">
           <span class="section-label">Why Araf Systems</span>
           <h2 class="section-title">Practical Solutions, Long-Term Value</h2>
-          <p style="margin-bottom:0;color:var(--text-mid);font-size:1rem;line-height:1.75;">We are a Dallas–Fort Worth–based software consulting firm helping businesses design, build, and scale reliable technology. From startups to established companies, we work closely with clients to deliver secure, scalable, and cost-effective solutions.</p>
+          <p style="margin-bottom:0;color:var(--text-mid);font-size:1rem;line-height:1.75;">We are a software consulting firm helping businesses design, build, and scale reliable technology. From startups to established companies, we work closely with clients to deliver secure, scalable, and cost-effective solutions.</p>
           <div class="why-points">
             <div class="why-point">
               <div class="why-point-icon"><i class="fa-solid fa-comments"></i></div>
@@ -1497,127 +1543,148 @@
   <section>
     <div class="container">
       <div class="fade-up">
-        <span class="section-label">Open Positions</span>
-        <h2 class="section-title">Current Opportunities</h2>
-        <p class="section-sub">Remote, hybrid, and on-site roles across the US. We offer direct hire and contract placements.</p>
+        <span class="section-label">Consulting Domains</span>
+        <h2 class="section-title">Fields We Place &amp; Consult In</h2>
+        <p class="section-sub">We specialize in connecting skilled professionals with consulting engagements across the United States. Whether you are an experienced practitioner or building toward a career change, we work with talent across these key disciplines.</p>
       </div>
-      <div class="jobs-filter">
-        <button class="filter-btn active" onclick="filterJobs('all', this)">All Roles</button>
-        <button class="filter-btn" onclick="filterJobs('data', this)">Data &amp; AI</button>
-        <button class="filter-btn" onclick="filterJobs('cloud', this)">Cloud &amp; DevOps</button>
-        <button class="filter-btn" onclick="filterJobs('dev', this)">Software Dev</button>
-        <button class="filter-btn" onclick="filterJobs('consult', this)">Consulting</button>
+      <div class="domains-grid">
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="domain-body">
+            <h3>Artificial Intelligence</h3>
+            <p>LLMs, generative AI, NLP, computer vision, and AI-powered product development using modern frameworks and cloud-native tooling.</p>
+            <div class="svc-tags">
+              <span class="tag">LangChain</span><span class="tag">OpenAI</span><span class="tag">AWS Bedrock</span><span class="tag">SageMaker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="domain-body">
+            <h3>Data Analytics &amp; Business Intelligence</h3>
+            <p>Turning raw data into actionable insight — dashboards, reporting, self-service analytics, and KPI frameworks across industries.</p>
+            <div class="svc-tags">
+              <span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">QuickSight</span><span class="tag">Looker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="domain-body">
+            <h3>Data Engineering</h3>
+            <p>Building and maintaining scalable data pipelines, lakehouses, ETL workflows, and streaming architectures that power modern analytics.</p>
+            <div class="svc-tags">
+              <span class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag">dbt</span><span class="tag">Kafka</span><span class="tag">Airflow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+          <div class="domain-body">
+            <h3>Machine Learning Engineering</h3>
+            <p>Model development, training, evaluation, and production deployment — from classical ML to deep learning at enterprise scale.</p>
+            <div class="svc-tags">
+              <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">MLflow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-brands fa-aws"></i></div>
+          <div class="domain-body">
+            <h3>Cloud Solutions (AWS)</h3>
+            <p>Architecture, migration, serverless, and cloud-native development across the full AWS service ecosystem with security and cost optimization.</p>
+            <div class="svc-tags">
+              <span class="tag">Lambda</span><span class="tag">ECS/EKS</span><span class="tag">DynamoDB</span><span class="tag">S3</span><span class="tag">CDK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-gears"></i></div>
+          <div class="domain-body">
+            <h3>DevOps &amp; Automation</h3>
+            <p>CI/CD pipelines, infrastructure-as-code, container orchestration, and process automation to accelerate delivery and reduce operational risk.</p>
+            <div class="svc-tags">
+              <span class="tag">Terraform</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="domain-body">
+            <h3>Software Development</h3>
+            <p>Full-stack web and mobile applications, REST and GraphQL APIs, and SaaS platforms built with modern frameworks and engineering best practices.</p>
+            <div class="svc-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">Spring</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+          <div class="domain-body">
+            <h3>Scrum / Agile Methodology</h3>
+            <p>Scrum Masters, Agile coaches, and delivery leads helping teams build momentum, remove blockers, and ship valuable software consistently.</p>
+            <div class="svc-tags">
+              <span class="tag">Scrum</span><span class="tag">SAFe</span><span class="tag">Kanban</span><span class="tag">Jira</span><span class="tag">Confluence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-server"></i></div>
+          <div class="domain-body">
+            <h3>Database Administration</h3>
+            <p>Relational and NoSQL database design, optimization, replication, and administration for high-availability production environments.</p>
+            <div class="svc-tags">
+              <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">DynamoDB</span><span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-plug"></i></div>
+          <div class="domain-body">
+            <h3>System Integration</h3>
+            <p>Connecting CRMs, ERPs, and third-party platforms using APIs, middleware, and event-driven architectures to eliminate data silos.</p>
+            <div class="svc-tags">
+              <span class="tag">MuleSoft</span><span class="tag">Kafka</span><span class="tag">REST</span><span class="tag">GraphQL</span><span class="tag">Salesforce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="domain-body">
+            <h3>IT Security &amp; Compliance</h3>
+            <p>Security engineering, IAM, compliance readiness, and risk management to protect your systems and meet regulatory requirements.</p>
+            <div class="svc-tags">
+              <span class="tag">SOC 2</span><span class="tag">HIPAA</span><span class="tag">Zero Trust</span><span class="tag">PCI-DSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="domain-card fade-up">
+          <div class="domain-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="domain-body">
+            <h3>IT Strategy &amp; Consulting</h3>
+            <p>Senior advisors helping leadership teams define technology roadmaps, vendor strategies, and digital transformation programs.</p>
+            <div class="svc-tags">
+              <span class="tag">Roadmapping</span><span class="tag">Staff Augmentation</span><span class="tag">Digital Transformation</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="jobs-grid" id="jobsGrid">
-
-        <div class="job-card fade-up" data-cat="data">
-          <div class="job-icon"><i class="fa-solid fa-database"></i></div>
-          <div class="job-info">
-            <h3>Senior ETL Engineer – Databricks &amp; AWS</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Remote / Dallas, TX</span>
-              <span><i class="fa-solid fa-briefcase"></i> Full-time</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $130k–$160k</span>
-            </div>
-          </div>
-          <span class="job-badge hot">Hot</span>
-        </div>
-
-        <div class="job-card fade-up" data-cat="data">
-          <div class="job-icon"><i class="fa-solid fa-brain"></i></div>
-          <div class="job-info">
-            <h3>Machine Learning Engineer</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Remote / US</span>
-              <span><i class="fa-solid fa-briefcase"></i> Full-time</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $140k–$175k</span>
-            </div>
-          </div>
-          <span class="job-badge new">New</span>
-        </div>
-
-        <div class="job-card fade-up" data-cat="data">
-          <div class="job-icon"><i class="fa-solid fa-chart-bar"></i></div>
-          <div class="job-info">
-            <h3>Data Analyst – Business Intelligence</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Irving, TX / Hybrid</span>
-              <span><i class="fa-solid fa-briefcase"></i> Full-time</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $90k–$115k</span>
-            </div>
-          </div>
-          <span class="job-badge open">Open</span>
-        </div>
-
-        <div class="job-card fade-up" data-cat="cloud">
-          <div class="job-icon"><i class="fa-brands fa-aws"></i></div>
-          <div class="job-info">
-            <h3>AWS Solutions Architect</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Remote / US</span>
-              <span><i class="fa-solid fa-briefcase"></i> Contract / FTE</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $150k–$185k</span>
-            </div>
-          </div>
-          <span class="job-badge hot">Hot</span>
-        </div>
-
-        <div class="job-card fade-up" data-cat="cloud">
-          <div class="job-icon"><i class="fa-solid fa-gears"></i></div>
-          <div class="job-info">
-            <h3>DevOps / Platform Engineer</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Remote</span>
-              <span><i class="fa-solid fa-briefcase"></i> Full-time</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $120k–$150k</span>
-            </div>
-          </div>
-          <span class="job-badge new">New</span>
-        </div>
-
-        <div class="job-card fade-up" data-cat="dev">
-          <div class="job-icon"><i class="fa-solid fa-code"></i></div>
-          <div class="job-info">
-            <h3>Full-Stack Software Engineer (React / Node)</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Remote / Dallas, TX</span>
-              <span><i class="fa-solid fa-briefcase"></i> Full-time</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $110k–$140k</span>
-            </div>
-          </div>
-          <span class="job-badge open">Open</span>
-        </div>
-
-        <div class="job-card fade-up" data-cat="dev">
-          <div class="job-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-          <div class="job-info">
-            <h3>Mobile Developer – React Native</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Remote</span>
-              <span><i class="fa-solid fa-briefcase"></i> Contract</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $85–$110/hr</span>
-            </div>
-          </div>
-          <span class="job-badge open">Open</span>
-        </div>
-
-        <div class="job-card fade-up" data-cat="consult">
-          <div class="job-icon"><i class="fa-solid fa-briefcase"></i></div>
-          <div class="job-info">
-            <h3>IT Strategy Consultant</h3>
-            <div class="job-meta">
-              <span><i class="fa-solid fa-location-dot"></i> Dallas, TX / Remote</span>
-              <span><i class="fa-solid fa-briefcase"></i> Full-time</span>
-              <span><i class="fa-solid fa-dollar-sign"></i> $120k–$155k</span>
-            </div>
-          </div>
-          <span class="job-badge new">New</span>
-        </div>
-
-      </div>
-      <div style="text-align:center;margin-top:40px;" class="fade-up">
-        <p style="margin-bottom:16px;color:var(--text-mid);">Don't see a perfect fit? We're always looking for exceptional talent.</p>
-        <a href="#" onclick="showPage('contact')" class="btn btn-primary">Submit Your Resume</a>
+      <div style="text-align:center;margin-top:56px;" class="fade-up">
+        <p style="margin-bottom:16px;color:var(--text-mid);">Have skills in one of these areas? We'd love to connect with you.</p>
+        <a href="#" onclick="showPage('contact')" class="btn btn-primary">Get In Touch</a>
       </div>
     </div>
   </section>
@@ -1669,7 +1736,7 @@
     <div class="container page-hero-content">
       <span class="section-label">About Us</span>
       <h1>Built on Expertise. Driven by Purpose.</h1>
-      <p>We are a Dallas–Fort Worth software consulting firm with a simple mission: help businesses thrive through technology.</p>
+      <p>A software consulting firm with a simple mission: help businesses thrive through technology.</p>
     </div>
   </div>
 
@@ -1679,7 +1746,7 @@
         <div class="fade-up">
           <span class="section-label">Our Story</span>
           <h2 class="section-title">Trusted by Businesses Across the US</h2>
-          <p style="margin-bottom:20px;">We are a Dallas–Fort Worth–based software consulting firm helping businesses design, build, and scale reliable technology solutions. We specialize in custom software development, cloud solutions, system integrations, automation, and IT consulting tailored to your business needs.</p>
+          <p style="margin-bottom:20px;">We are a software consulting firm helping businesses design, build, and scale reliable technology solutions. We specialize in custom software development, cloud solutions, system integrations, automation, and IT consulting tailored to your business needs.</p>
           <p style="margin-bottom:20px;">From startups to established companies, we work closely with clients to deliver secure, scalable, and cost-effective solutions that improve efficiency and drive growth.</p>
           <p>Our team focuses on clear communication, practical solutions, and long-term value. Serving businesses across the United States with remote and on-site consulting.</p>
           <div style="display:flex;gap:32px;margin-top:40px;flex-wrap:wrap;">
@@ -1692,8 +1759,8 @@
               <div style="font-size:.85rem;color:var(--text-mid);">Clients Served</div>
             </div>
             <div>
-              <div style="font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:900;color:var(--teal);">48</div>
-              <div style="font-size:.85rem;color:var(--text-mid);">States Covered</div>
+              <div style="font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:900;color:var(--teal);" id="aboutYearsExp">3+</div>
+              <div style="font-size:.85rem;color:var(--text-mid);">Years of Experience</div>
             </div>
           </div>
         </div>
@@ -1747,50 +1814,6 @@
     </div>
   </section>
 
-  <!-- Leadership -->
-  <section>
-    <div class="container">
-      <div style="text-align:center;" class="fade-up">
-        <span class="section-label">Leadership</span>
-        <h2 class="section-title">The Team Behind Araf Systems</h2>
-        <p class="section-sub" style="margin:0 auto 56px;">Senior practitioners with deep hands-on experience across cloud, AI, and enterprise software.</p>
-      </div>
-      <div class="team-grid">
-        <div class="team-card fade-up">
-          <div class="team-avatar">AS</div>
-          <div class="team-info">
-            <h4>Ahmad Shaikh</h4>
-            <div class="role">Founder &amp; CEO</div>
-            <p>Cloud architect and enterprise technologist with 15+ years delivering scalable solutions across healthcare, finance, and logistics.</p>
-          </div>
-        </div>
-        <div class="team-card fade-up">
-          <div class="team-avatar">SR</div>
-          <div class="team-info">
-            <h4>Sana Raza</h4>
-            <div class="role">VP, AI &amp; Data</div>
-            <p>Machine learning practitioner and data engineering leader specializing in Databricks, PySpark, and enterprise analytics platforms.</p>
-          </div>
-        </div>
-        <div class="team-card fade-up">
-          <div class="team-avatar">MK</div>
-          <div class="team-info">
-            <h4>Michael Kim</h4>
-            <div class="role">Director of Engineering</div>
-            <p>Full-stack architect with expertise in microservices, cloud-native development, and agile delivery across distributed teams.</p>
-          </div>
-        </div>
-        <div class="team-card fade-up">
-          <div class="team-avatar">LP</div>
-          <div class="team-info">
-            <h4>Laura Patel</h4>
-            <div class="role">Head of Consulting</div>
-            <p>IT strategy consultant helping enterprise and mid-market clients navigate digital transformation and technology modernization.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 </div><!-- /page-about -->
 
@@ -1939,10 +1962,23 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="nav-logo">
-          <div class="nav-logo-icon">A</div>
-          <span class="nav-logo-text">Araf<span>Systems</span></span>
+          <svg class="nav-logo-svg" width="38" height="38" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><clipPath id="fc2"><rect width="80" height="80" rx="14"/></clipPath></defs>
+            <rect width="80" height="80" rx="14" fill="#00B4A6"/>
+            <g clip-path="url(#fc2)">
+              <polygon points="6,80 40,30 74,80"  fill="#008C81"/>
+              <polygon points="-2,80 24,40 50,80" fill="#009E91"/>
+              <polygon points="18,80 40,16 62,80" fill="#FFFFFF" opacity="0.95"/>
+              <polygon points="32,80 56,36 80,80" fill="#009E91"/>
+              <rect x="0" y="70" width="80" height="10" fill="#007A70"/>
+            </g>
+          </svg>
+          <div class="nav-logo-wordmark">
+            <span class="w1">ARAF</span>
+            <span class="w2">SYSTEMS</span>
+          </div>
         </div>
-        <p>Dallas–Fort Worth software consulting firm helping businesses design, build, and scale reliable technology solutions across the United States.</p>
+        <p>Software consulting firm helping businesses design, build, and scale reliable technology solutions across the United States.</p>
         <div class="contact-social">
           <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
@@ -1978,7 +2014,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Araf Systems LLC. All rights reserved.</p>
+      <p>© <span id="copyrightYear"></span> Araf Systems LLC. All rights reserved.</p>
       <p>Irving, TX &nbsp;·&nbsp; Serving clients nationwide</p>
     </div>
   </div>
@@ -2056,6 +2092,21 @@
       }
     });
   }
+
+  /* ─── AUTO YEARS OF EXPERIENCE ─── */
+  // Auto-updates years of experience and copyright year
+  (function() {
+    const FOUNDED = 2023;
+    const current = new Date().getFullYear();
+    const yrs = current - FOUNDED;
+    const display = yrs < 1 ? '1+' : yrs + '+';
+    const el1 = document.getElementById('yearsExp');
+    const el2 = document.getElementById('aboutYearsExp');
+    if (el1) el1.textContent = display;
+    if (el2) el2.textContent = display;
+    const cy = document.getElementById('copyrightYear');
+    if (cy) cy.textContent = current;
+  })();
 
   /* ─── CONTACT FORM ─── */
   function submitForm() {
